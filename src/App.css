@@ -1,0 +1,161 @@
+
+:root {
+  --primary: #C71585;
+  --secondary: #21d07a;
+  --white: #fff;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  border: 2px solid steelblue;
+  border-radius: 5px;
+  margin: 4px auto;
+}
+.title{
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+.pictureoftheday{
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.pictureoftheday img{
+  width: 70%;
+  height: 280px;
+}
+.pictureoftheday iframe{
+  width: 100%;
+  height: 280px !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.row input {
+  width: 30%;
+  background-color: #A1AAB5;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.results {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.results li {
+  list-style: none;
+}
+
+.result-card {
+  display: flex;
+  margin: 30px;
+}
+
+.result-card .poster-wrapper img {
+  width: 70px;
+  height: 70px;
+  background-color: #dbdada;
+  border-radius: 5px;
+  margin-right: 15px;
+  display: block;
+  color: transparent;
+}
+
+.result-card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-card .info .title {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.result-card .info .release-date {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--primary);
+  margin: 0;
+}
+
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationDisabled a {
+  color: grey;
+  background-color: grey;
+}
+.nodata{
+  text-align: center;
+}
+
+.relatedlinks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+.relatedlinks p{
+  cursor: pointer;
+}
